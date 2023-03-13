@@ -7,6 +7,8 @@
 
 > You can refer to [link #2](#links) below for more info.
 
+>
+
 ## Task 2
 
 - Discuss how depth-first search works by experimenting with the following link. Try both directed and undirected graphs and write a short summary.
