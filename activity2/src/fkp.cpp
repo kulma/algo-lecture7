@@ -8,7 +8,7 @@ struct Item
 {
     int value, weight;
 
-    // Constructor
+    // Constructor 
     Item(int value, int weight)
     {
         this->value = value;
@@ -29,9 +29,9 @@ static bool cmp(struct Item a, struct Item b)
 double fractionalKnapsack(int W, struct Item arr[], int N)
 {
     // Sorting Item on basis of ratio
-    sort(arr, arr + N, cmp);
+    sort(arr, arr + N, cmp); // uses C++ standard library sort-method
 
-    double finalvalue = 0.0;
+    double finalvalue = 0.0; 
 
     // Looping through all items
     for (int i = 0; i < N; i++)
@@ -62,10 +62,10 @@ double fractionalKnapsack(int W, struct Item arr[], int N)
 int main()
 {
     int W = 50;
-    Item arr[] = {{60, 10}, {100, 20}, {120, 30}};
+    Item arr[] = {{60, 10}, {100, 20}, {120, 30}}; // array of three objects with value and weight
 
-    int N = sizeof(arr) / sizeof(arr[0]);
-
+    int N = sizeof(arr) / sizeof(arr[0]); 
+    
     // Function call
     cout << fractionalKnapsack(W, arr, N);
     return 0;
